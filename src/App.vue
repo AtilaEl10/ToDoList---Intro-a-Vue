@@ -10,6 +10,7 @@
     <ol class="my-5 mx-auto">
       <li v-for="tareas in todolist" :key="tareas">
         {{tareas}}
+        <!--<button @click="checked()" class="btn btn-warning check">Check</button>-->
       </li>
     </ol>
     <div class="d-grid gap-2 col-4 mx-auto">
@@ -25,7 +26,7 @@ export default {
   data() {
     return {
       todolist: [],
-      tareas: ""
+      tareas: "",
     }
   },
   methods: {
@@ -61,6 +62,13 @@ img {
 button {
   height: 40px;
 }
+// .check {
+//  font-family: Avenir, Helvetica, Arial, sans-serif;
+//  font-size: 20px;
+// }
+// .checked {
+//  background: yellow;
+// }
 .btnlimpiar {
   font-size: 20px;
 }
